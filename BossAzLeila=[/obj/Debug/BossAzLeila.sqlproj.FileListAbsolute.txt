@@ -1,0 +1,6 @@
+C:\Users\HP\Source\Repos\HomeworkBackLeila\BossAzLeila=[\bin\Debug\BossAzLeila.dacpac
+C:\Users\HP\Source\Repos\HomeworkBackLeila\BossAzLeila=[\bin\Debug\BossAzLeila__.dll
+C:\Users\HP\Source\Repos\HomeworkBackLeila\BossAzLeila=[\bin\Debug\BossAzLeila__.pdb
+C:\Users\HP\Source\Repos\HomeworkBackLeila\BossAzLeila=[\obj\Debug\BossAzLeila__.dll
+C:\Users\HP\Source\Repos\HomeworkBackLeila\BossAzLeila=[\obj\Debug\BossAzLeila__.pdb
+C:\Users\HP\Source\Repos\HomeworkBackLeila\BossAzLeila=[\obj\Debug\BossAzLeila.sqlprojAssemblyReference.cache

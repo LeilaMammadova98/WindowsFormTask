@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF9EFD63-87BB-49EA-A886-B3CB45DFFDDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BossLeilaProject</RootNamespace>
+    <AssemblyName>BossLeilaProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Categories\CategoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Categories\CategoriesForm.Designer.cs">
+      <DependentUpon>CategoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Categories\CategoriesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Categories\CategoriesUserControl.Designer.cs">
+      <DependentUpon>CategoriesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Companies2\CompaniesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Companies2\CompaniesForm.Designer.cs">
+      <DependentUpon>CompaniesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Companies2\CompaniesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Companies2\CompaniesUserControl.Designer.cs">
+      <DependentUpon>CompaniesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\City\CityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\City\CityForm.Designer.cs">
+      <DependentUpon>CityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\City\CityUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\City\CityUserControl.Designer.cs">
+      <DependentUpon>CityUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Education\EducationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Education\EducationForm.Designer.cs">
+      <DependentUpon>EducationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Education\EducationUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Education\EducationUserControl.Designer.cs">
+      <DependentUpon>EducationUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Experience\ExperienceUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\Experience\ExperienceUserControl.Designer.cs">
+      <DependentUpon>ExperienceUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubCategory\SubCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SubCategory\SubCategoryForm.Designer.cs">
+      <DependentUpon>SubCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubCategory\SubCategoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\SubCategory\SubCategoryUserControl.Designer.cs">
+      <DependentUpon>SubCategoryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\Data Source\BossDataSet.cs">
+      <DependentUpon>BossDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\Data Source\BossDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BossDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\Helpers\ButtonExtension.cs" />
+    <Compile Include="AppCode\Helpers\CryptoExtension.cs" />
+    <Compile Include="AppCode\Helpers\GridViewExtension.cs" />
+    <Compile Include="AppCode\Helpers\RegexExtension.cs" />
+    <Compile Include="Client\ClientFrameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\ClientFrameForm.Designer.cs">
+      <DependentUpon>ClientFrameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\CvCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\CvCard.Designer.cs">
+      <DependentUpon>CvCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Description\AnnounceDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Description\AnnounceDescription.Designer.cs">
+      <DependentUpon>AnnounceDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Description\CvDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Description\CvDescription.Designer.cs">
+      <DependentUpon>CvDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\JobAnnounceCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\JobAnnounceCard.Designer.cs">
+      <DependentUpon>JobAnnounceCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\AddAnounceForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\AddAnounceForm2.Designer.cs">
+      <DependentUpon>AddAnounceForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\AnnouncListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\AnnouncListForm.Designer.cs">
+      <DependentUpon>AnnouncListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\CV\CVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\CV\CVForm.Designer.cs">
+      <DependentUpon>CVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\CV\CvListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\CV\CvListForm.Designer.cs">
+      <DependentUpon>CvListForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Categories\CategoriesForm.resx">
+      <DependentUpon>CategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Categories\CategoriesUserControl.resx">
+      <DependentUpon>CategoriesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Companies2\CompaniesForm.resx">
+      <DependentUpon>CompaniesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Companies2\CompaniesUserControl.resx">
+      <DependentUpon>CompaniesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\City\CityForm.resx">
+      <DependentUpon>CityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\City\CityUserControl.resx">
+      <DependentUpon>CityUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Education\EducationForm.resx">
+      <DependentUpon>EducationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Education\EducationUserControl.resx">
+      <DependentUpon>EducationUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Experience\ExperienceUserControl.resx">
+      <DependentUpon>ExperienceUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SubCategory\SubCategoryForm.resx">
+      <DependentUpon>SubCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SubCategory\SubCategoryUserControl.resx">
+      <DependentUpon>SubCategoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\ClientFrameForm.resx">
+      <DependentUpon>ClientFrameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\CvCard.resx">
+      <DependentUpon>CvCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Description\AnnounceDescription.resx">
+      <DependentUpon>AnnounceDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Description\CvDescription.resx">
+      <DependentUpon>CvDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\JobAnnounceCard.resx">
+      <DependentUpon>JobAnnounceCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="User\AddAnounceForm2.resx">
+      <DependentUpon>AddAnounceForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\AnnouncListForm.resx">
+      <DependentUpon>AnnouncListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\CV\CVForm.resx">
+      <DependentUpon>CVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\CV\CvListForm.resx">
+      <DependentUpon>CvListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AppCode\Data Source\BossDataSet.xsc">
+      <DependentUpon>BossDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AppCode\Data Source\BossDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BossDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AppCode\Data Source\BossDataSet.xss">
+      <DependentUpon>BossDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,28 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [BossLeila].[DF__City__CreatedDat__1D114BD1] (Default Constraint)
+       [BossLeila].[DF__Education__Creat__1C1D2798] (Default Constraint)
+     Alter
+       [BossLeila].[City] (Table)
+       [BossLeila].[Education] (Table)
+     Create
+       [BossLeila].[Experience] (Table)
+       Default Constraint: unnamed constraint on [BossLeila].[Experience] (Default Constraint)
+       Default Constraint: unnamed constraint on [BossLeila].[City] (Default Constraint)
+       Default Constraint: unnamed constraint on [BossLeila].[Education] (Default Constraint)
+
+** Supporting actions
+
+The column UpdatedUserId on table [BossLeila].[City] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column UpdatedUserId on table [BossLeila].[Education] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+
